@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/List.dir/Main.cpp.o CMakeFiles/List.dir/src/StudentList.cpp.o -o List 

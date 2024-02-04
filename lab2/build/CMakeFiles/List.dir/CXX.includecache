@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Student.h
+iostream
+-
+
+../include/StudentList.h
+Student.h
+../include/Student.h
+
+/home/stud2022/2jozwiak/lab_rachwał/lab2/Main.cpp
+Student.h
+/home/stud2022/2jozwiak/lab_rachwał/lab2/Student.h
+StudentList.h
+/home/stud2022/2jozwiak/lab_rachwał/lab2/StudentList.h
+
+/home/stud2022/2jozwiak/lab_rachwał/lab2/src/StudentList.cpp
+StudentList.h
+/home/stud2022/2jozwiak/lab_rachwał/lab2/src/StudentList.h
+
