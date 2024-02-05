@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/Map.dir/Main.cpp.o CMakeFiles/Map.dir/src/MapPoint.cpp.o -o Map 
