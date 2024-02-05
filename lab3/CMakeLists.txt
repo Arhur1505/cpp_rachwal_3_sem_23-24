@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.0)
-project (List)
+project (GSeries)
 
 # prevent for in-source building
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
@@ -7,6 +7,14 @@ set(CMAKE_DISABLE_SOURCE_CHANGES  ON)
 if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
   message(SEND_ERROR "In-source builds are not allowed.")
 endif ()
+
+option(LONG_LOOP "Enable print results" OFF)
+
+if(LONG_LOOP)
+    add_definitions(-DPERFORME_LONG_LOOP=1)
+else()
+    add_definitions(-DPERFORME_LONG_LOOP=0)
+endif()
 
 set(CMAKE_BUILD_TYPE Debug) #Release
 set(CMAKE_CXX_STANDARD 11)

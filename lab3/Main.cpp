@@ -46,7 +46,7 @@ int main ()
   // pierwszy element ciagu to 1
   const ciag geometryczny = InicjalizujCiagGeometryczny (rozmiar, iloraz);
   Wypisz(geometryczny, rozmiar);
-  printf("Suma: %.2f\n",Suma(geometryczny, rozmiar));
+  printf("Suma: %.2f\n", Suma(geometryczny, rozmiar));
 
 
   if(LONG_LOOP){ // Zmienna zdefiniowana na poziomie CMakeLists.txt
