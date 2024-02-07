@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/PointCloud.h
+iostream
+-
+array
+-
+
+/home/stud2022/2jozwiak/lab_rachwał/lab7/Main.cpp
+PointCloud.h
+/home/stud2022/2jozwiak/lab_rachwał/lab7/PointCloud.h
+

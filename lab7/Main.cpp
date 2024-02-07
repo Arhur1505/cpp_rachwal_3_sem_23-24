@@ -32,33 +32,33 @@
 
 int main() {
 
-  // Point3D myPoint3D(1.2, 3.4, 5.6); // tak się nie powinno kompilować
+  //Point3D myPoint3D(1.2, 3.4, 5.6); // tak się nie powinno kompilować
   Point3D myPoint3D({1.2, 3.4, 5.6});  // ale tak, już OK!
   myPoint3D.displayCoordinates();
   std::cout << std::endl;
 
-  APointCloud myAPointCloud; // wersja z tablicą dynamicznie alokowaną
-  // Dodaj kilka punktów do chmury punktów
-  myAPointCloud.addPoint(Point3D({1.0, 2.0, 3.0}));
-  myAPointCloud.addPoint(Point3D({3.0, 2.0, 1.0}));
-  myAPointCloud.displayPoints();
+//   APointCloud myAPointCloud; // wersja z tablicą dynamicznie alokowaną
+//   // Dodaj kilka punktów do chmury punktów
+//   myAPointCloud.addPoint(Point3D({1.0, 2.0, 3.0}));
+//   myAPointCloud.addPoint(Point3D({3.0, 2.0, 1.0}));
+//   myAPointCloud.displayPoints();
 
-  // Oblicz i zwróć Point3D będący środkiem geometrycznym chmury punktów
-  // następnie wyświetl jego współrzędne
-  std::cout << "Środek geometryczny [APC]: ";
-  myAPointCloud.geoCentre().displayCoordinates();
+//   // Oblicz i zwróć Point3D będący środkiem geometrycznym chmury punktów
+//   // następnie wyświetl jego współrzędne
+//   std::cout << "Środek geometryczny [APC]: ";
+//   myAPointCloud.geoCentre().displayCoordinates();
 
   VPointCloud myVPointCloud; // wersja z std::vector
   myVPointCloud.addPoint(Point3D({2.0, 3.0, 4.0}));
   myVPointCloud.addPoint(Point3D({2.0, 1.0, 8.0}));
   myVPointCloud.addPoint(Point3D({7.0, 7.0, -1.0}));
-  myVPointCloud.add(myAPointCloud);
-  // myAPointCloud.add(myAPointCloud); THIS IS EXTRA 
-  std::cout << "\nLiczba punktow [VPC]: " << myVPointCloud.count();
+// myVPointCloud.add(myAPointCloud);
+//   // myAPointCloud.add(myAPointCloud); THIS IS EXTRA 
+//   std::cout << "\nLiczba punktow [VPC]: " << myVPointCloud.count();
   
-  std::cout << "\nŚrodek geometryczny [VPC]: ";
-  myVPointCloud.geoCentre().displayCoordinates();
-  std::cout << std::endl;
+//   std::cout << "\nŚrodek geometryczny [VPC]: ";
+//   myVPointCloud.geoCentre().displayCoordinates();
+//   std::cout << std::endl;
   return 0;
 }
 
