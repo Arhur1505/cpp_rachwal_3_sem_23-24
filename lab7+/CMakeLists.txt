@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.0)
-project (Point3D)
+project (PointCloud)
 
 # prevent for in-source building
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
